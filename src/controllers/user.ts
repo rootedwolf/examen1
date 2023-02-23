@@ -59,10 +59,6 @@ export default class UserController {
         if (status) {
           tasks = tasks.filter(task => task.status === status);
         }
-      
-        if (date) {
-            tasks = tasks.filter(task => task.createdAt.toDateString() === new Date(date).toDateString());
-        }
         res.status(200).json(tasks);
     }
 }
