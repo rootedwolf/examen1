@@ -1,6 +1,5 @@
 import express from "express"
 import http from "http";
-import * as io from "socket.io";
 import apiRoutes from "./api/v1/api.routes";
 import cors from "cors";
 import mongoose from "mongoose";
